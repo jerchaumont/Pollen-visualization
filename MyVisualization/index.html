@@ -5,8 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualitation de données polliniques</title>
+    <style>
+        svg{
+            background-color: lightgray;
+        }
+    </style>
 </head>
 <body>
-    
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.4.4/dist/d3.min.js"></script>
+    <script>
+        //création d'une constante pour largeur de l'espace svg
+        const largeur = window.innerWidth;
+        
+        //ajouter et transformer les données
+        d3.csv('pollen_tri.csv', function(d){
+            return{
+                date : d.Date, 
+                Ambrosia : +d.Ambrosia,
+                Artemisia : +d.Artemisia,
+                Asteraceae : +d.Asteraceae,
+                Alnus : +d.Alnus,
+                Betula : +d.Betula,
+                Ericaceae : +d.Ericaceae,
+                Carpinus: +d.Carpinus,
+                Castanea: +d.Castanea,
+                Quercus: +d.Quercus,
+                Chenopodium: +d. Chenopodium,
+                Cupressaceae : +d.Cupressaceae,
+                Acer : +d.Acer,
+                Fraxinus : +d.Fraxinus,
+                Gramineae : +d.Gramineae,
+                Fagus : +d.Fagus,
+                Juncaceae : +d.Juncaceae,
+                Aesculus : +d.Aesculus,
+                Larix : +d.Larix,
+                Corylus : +d.Corylus,
+                Juglans : +d.Juglans,
+                Umbellifereae : +d.Umbellifereae,
+                Ulmus : +d.Ulmus,
+                Urtica : +d.Urtica,
+                Rumex : +d.Rumex,
+                Populus : +d.Populus,
+                Pinaceae : +d.Pinaceae,
+                Plantago : +d.Plantago,
+                Platanus : +d.Platanus,
+                Salix : +d.Salix,
+                Cyperaceae : +d.Cyperaceae,
+                Filipendula : +d.Filipendula,
+                Sambucus : +d.Sambucus,
+                Tilia : +d.Tilia,
+            }
+        }).then(donnees =>{
+            //vérifier que les données ont été importées au moyen de console.log
+            console.log(donnees);
+            
+            // création espace svg
+            let canevas1 = d3
+            .select('body')
+            .append('svg')
+            .attr('width',largeur)
+            .attr('height',800);
+        })
+    </script>
 </body>
 </html>
