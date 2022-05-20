@@ -19,6 +19,7 @@ En cours, non fini
 
 ## Notes
 - Pour l'axe des X, utiliser d3.scaleTime plutôt que d3.scaleLinear
+- Tuto utile : https://vizhub.com/curran/73bcdb68be6b4500b03827c9d58defba?file=useData.js 
 
 
 ## Carnet de bord
@@ -27,4 +28,4 @@ _2022.05.19_
 -  2h : Jouer avec les données, nettoyer les données, différents tests
 
 _2022.05.19_
-- 2h : Comprendre comment faire une échelle et une line chart 
+- 2h30 : Comprendre comment faire une échelle et une line chart 
