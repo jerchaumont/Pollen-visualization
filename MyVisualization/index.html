@@ -20,7 +20,8 @@
         //ajouter et transformer les données
         d3.csv('pollen_tri.csv', function(d){
             return{
-                date : d.Date, 
+                // il faut spécifier que la date est bien une date (et non pas une simple variable numérique) au moyen de d3.timeParse
+                date : d3.timeParse("%Y-%m-%d")(d.Date), 
                 Ambrosia : +d.Ambrosia,
                 Artemisia : +d.Artemisia,
                 Asteraceae : +d.Asteraceae,
@@ -59,12 +60,23 @@
             //vérifier que les données ont été importées au moyen de console.log
             console.log(donnees);
             
-            // création espace svg
+            // création espace svg. le background est spécifié dans le css
             let canevas1 = d3
             .select('body')
             .append('svg')
             .attr('width',largeur)
             .attr('height',800);
+            
+            //visualiser le set de données
+                // ajouter l'axe des X, sous format de date
+                const axeX = d3.scaleTime()
+                .domain(d3.extent(d => d.Date))
+                .range([ 0, width ]);
+
+                canevas1.append("g")
+                .attr("transform", `translate(0, ${height})`)
+                .call(d3.axisBottom(axeX));
+                
         })
     </script>
 </body>
