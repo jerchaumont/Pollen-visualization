@@ -17,4 +17,4 @@ _2022.05.19_
 -  2h : Jouer avec les données, nettoyer les données, différents tests
 
 _2022.05.19_
-- Comprendre comment faire une échelle et une line chart 
+- 2h : Comprendre comment faire une échelle et une line chart 
