@@ -58,7 +58,7 @@
             }
         }).then(donnees =>{
             //vérifier que les données ont été importées au moyen de console.log
-            console.log(donnees);
+            //console.log(donnees);
             
             // création espace svg. le background est spécifié dans le css
             let canevas1 = d3
@@ -68,15 +68,22 @@
             .attr('height',800);
             
             //visualiser le set de données
-                // ajouter l'axe des X, sous format de date
-                const axeX = d3.scaleTime()
-                .domain(d3.extent(d => d.Date))
-                .range([ 0, width ]);
+            // ajouter l'axe des X, sous format de date
+            const axeX = d3.scaleTime()
+            .domain(d3.extent(donnees, function(d) {return d.Date;}))
+            //.attr("transform", `translate(0, ${innerHeight})`)
+            .range([ 100,window.innerWidth-100]);
+            
+            canevas1.append("g")
 
-                canevas1.append("g")
-                .attr("transform", `translate(0, ${height})`)
-                .call(d3.axisBottom(axeX));
-                
+            .call(d3.axisBottom(axeX));
+            
+            // Ajouter l'axe des Y
+/*             const axeY = d3.scaleLinear()
+            .domain(donnees, function(d) {return d.Ambrosia;})
+            .range([ window.innerHeight, 0]);
+            canevas1.append("g")
+            .call(d3.axisLeft(axeY)); */
         })
     </script>
 </body>
