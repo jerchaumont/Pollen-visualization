@@ -1,6 +1,9 @@
 # Pollen-visualization
 ## Description
-Projet de visualisation de données 
+Projet de visualisation de données polliniques. L'objectif est de visualiser les données de concentration pollinique au Luxembourg sur 26 ans, avec une trentaine de pollens différents répertoriés, ceci afin de pouvoir observer de potentielles variations de concentration pollinique selon les mois, les années.
+
+## Etat du projet
+En cours, non fini 
 
 ## Idées
 - Données trouvées sur les pollens. Disponibles sur https://data.public.lu/en/datasets/pollen/ (consulté le 19.05.2022)
