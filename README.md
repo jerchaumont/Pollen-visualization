@@ -20,6 +20,7 @@ En cours, non fini
 ## Notes
 - Pour l'axe des X, utiliser d3.scaleTime plutôt que d3.scaleLinear
 - Tuto utile : https://vizhub.com/curran/73bcdb68be6b4500b03827c9d58defba?file=useData.js 
+- Explication sur les timelines : https://www.goodmarketing.club/guide/d3-js-multiple-lines-chart-w-line-by-line-code-explanations/ 
 
 
 ## Carnet de bord
