@@ -1,4 +1,6 @@
 # Pollen-visualization
+## Etat du projet
+En cours, non fini 
 ## Description
 Projet de visualisation de données polliniques. L'objectif est de visualiser les données de concentration pollinique au Luxembourg sur 26 ans, avec une trentaine de pollens différents répertoriés, ceci afin de pouvoir observer de potentielles variations de concentration pollinique selon les mois, les années.
 
@@ -8,9 +10,6 @@ Les données sont exprimées en pollens/m3. Selon [pollenetallergie.ch](https://
 - Valeur 20–50: concentration moyenne
 - Valeur 50–150: concentration forte
 - Valeur >150: concentration très forte
-
-## Etat du projet
-En cours, non fini 
 
 ## Idées
 - Données trouvées sur les pollens. Disponibles sur https://data.public.lu/en/datasets/pollen/ (consulté le 19.05.2022)
@@ -30,3 +29,6 @@ _2022.05.19_
 
 _2022.05.19_
 - 2h30 : Comprendre comment faire une échelle et une line chart 
+
+_22.05.27
+- 45 min : test des données sur un graphe axial 
