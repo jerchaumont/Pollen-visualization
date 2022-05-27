@@ -20,6 +20,7 @@ Les données sont exprimées en pollens/m3. Selon [pollenetallergie.ch](https://
 - Pour l'axe des X, utiliser d3.scaleTime plutôt que d3.scaleLinear
 - Tuto utile : https://vizhub.com/curran/73bcdb68be6b4500b03827c9d58defba?file=useData.js 
 - Explication sur les timelines : https://www.goodmarketing.club/guide/d3-js-multiple-lines-chart-w-line-by-line-code-explanations/ 
+- Faire une line chart : https://d3-graph-gallery.com/graph/line_basic.html 
 
 
 ## Carnet de bord
@@ -30,5 +31,5 @@ _2022.05.19_
 _2022.05.19_
 - 2h30 : Comprendre comment faire une échelle et une line chart 
 
-_22.05.27
+_22.05.27_
 - 45 min : test des données sur un graphe axial 
