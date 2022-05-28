@@ -58,7 +58,6 @@
       svg.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr('fill', (d,i) => d3.schemeCategory10[i])
       .attr("stroke", "steelblue")
       .attr("stroke-width", 1.5)
       .attr("d", d3.line()
