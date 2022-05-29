@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test pollen avec code D3 Graph Gallery</title>
+  <title>Pollen line chart</title>
 </head>
 <body>
   <h1>Concentration pollinique au Luxembourg, 1992-2018</h1>
@@ -38,10 +38,10 @@
       const x = d3.scaleTime()
       .domain(d3.extent(data, function(d) { return d.Date; }))
       .range([ 0, width ]);
-
+      
       // le ticks détermine en combien de parts est divisé l'axe
       const monAxeX = d3.axisBottom(x).ticks(26)
-
+      
       //ajouter axe au svg
       svg.append("g")
       .attr("transform", "translate(0," + height + ")")
@@ -54,7 +54,7 @@
       svg.append("g")
       .call(d3.axisLeft(y));
       
-      // Ajouter ligne
+      // Ajouter lines charts
       svg.append("path")
       .datum(data)
       .attr("fill", "none")
@@ -65,6 +65,22 @@
       .y(function(d) { return y(d.Ambrosia) })
       )
     })
+    
+    // Légende axe X :
+    svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("x", width)
+    .attr("y", height + margin.top + 20)
+    .text("Période");
+    
+    // Légende axe Y :
+    svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("transform", "rotate(-90)")
+    .attr("y", -margin.left+20)
+    .attr("x", -margin.top)
+    .text("Concentration pollinique")
+    
     
   </script>
 </body>
