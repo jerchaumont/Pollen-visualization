@@ -8,11 +8,11 @@
 </head>
 <body>
   <h1>Concentration pollinique au Luxembourg, 1992-2018</h1>
-  <!-- Load d3.js ATTENTION : VERSION v.4 (ne fonctionne pas avec v.7 ?!)-->
+
   <script src="https://cdn.jsdelivr.net/npm/d3@7.4.4/dist/d3.min.js"></script>
   <script>
     
-    // set the dimensions and margins of the graph
+    // dimensions et marges du graphe
     const margin = {top: 20, right: 90, bottom: 60, left: 90},
     width = innerWidth - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
@@ -26,13 +26,25 @@
     .attr("transform",
     "translate(" + margin.left + "," + margin.top + ")");
     
+    // type de pollens
+    let typeDePollens = new Set();
+    let tableauListePollens;
+    let setComplet = false;
+
     //Read the data
     d3.csv("pollen_tri.csv",
     
     // Formater les variables:
     function(d){
+        if(!setComplet){
+            typeDePollens.add(Object.keys(d));
+            tableauListePollens = Array.from(typeDePollens).flat();
+            tableauListePollens.shift();
+            setComplet = true;
+        }
       return { Date : d3.timeParse("%Y-%m-%d")(d.Date), Betula : +d.Betula }
     }).then(data => {
+        console.log(tableauListePollens)
       
       // Ajout axe X --> it is a date format
       const x = d3.scaleTime()
