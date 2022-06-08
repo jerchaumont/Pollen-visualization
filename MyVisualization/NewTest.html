@@ -50,7 +50,7 @@
         
         d3.csv("pollen_tri.csv", 
         function(d) {            
-            let listePollens = d.columns.slice(1).map(function(id) {
+            const listePollens = d.columns.slice(1).map(function(id) {
                 return {
                     id: id,
                     values: d.map(function(d) {
