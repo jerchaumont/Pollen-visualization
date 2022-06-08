@@ -33,3 +33,6 @@ _2022.05.19_
 
 _22.05.27_
 - 45 min : test des données sur un graphe axial 
+
+_22.06.07_
+- 1h30
