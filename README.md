@@ -4,12 +4,7 @@ En cours, non fini
 ## Description
 Projet de visualisation de données polliniques. L'objectif est de visualiser les données de concentration pollinique au Luxembourg sur 26 ans, avec une trentaine de pollens différents répertoriés, ceci afin de pouvoir observer de potentielles variations de concentration pollinique selon les mois, les années.
 
-Les données sont exprimées en pollens/m3. Selon [pollenetallergie.ch](https://www.pollenundallergie.ch/informations-polliniques/donnees-polliniques/donnees-polliniques-mesures-des-pollens?pflanzenartId=9&messstationId=4&startDatum=2021-04-02&scrollto=tagesuebersicht) :
-- Valeur 0–1: aucune concentration (ou station hors-service)
-- Valeur 1–20: faible concentration
-- Valeur 20–50: concentration moyenne
-- Valeur 50–150: concentration forte
-- Valeur >150: concentration très forte
+Les données sont exprimées en pollens/m3. Voir tableau de la confédération suisse](https://www.meteoswiss.admin.ch/dam/jcr:f3d0942c-b3ab-4de6-882e-5df909faed9c/threshold-values-for-pollen-load-classes-of-allergenic-pollen-types.pdf) concernant les valeurs seuils pour les classes de charge pollinique des types de pollens allergisants :
 
 ## Idées
 - Données trouvées sur les pollens. Disponibles sur https://data.public.lu/en/datasets/pollen/ (consulté le 19.05.2022)
@@ -36,3 +31,8 @@ _22.05.27_
 
 _22.06.07_
 - 1h30
+
+## Améliorations possibles
+Au vu de du nombre important de variables, la visualisation souffre de problèmes de lisibilité. Quelques améliorations sont envisageables : 
+- Ajout d'une grille sur le graphique pour faciliter la lecture
+- Ajout de la position de la souris sur l'axe pour connaitre la valeur exacte à une date donnée
