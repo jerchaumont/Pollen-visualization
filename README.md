@@ -1,14 +1,15 @@
 # Pollen-visualization
 ## Description
-### Contexte
+### Contexte de développement 
 Ce projet a été développé dans le cadre du cours de _Visualisation de données_ dispensé par Isaac Pante (SLI, Lettres, UNIL) au semestre de printemps 2022.
-### Objectifs
-Projet de visualisation de données polliniques. L'objectif est de visualiser les données de concentration pollinique au Luxembourg sur 26 ans, avec une trentaine de pollens répertoriés, ceci afin de pouvoir observer de potentielles variations de concentration pollinique selon les mois, les années.
+### Visualisation
+Visualisation des données de concentration pollinique au Luxembourg sur 26 ans, avec une trentaine de pollens répertoriés, ceci afin de pouvoir observer de potentielles variations de concentration pollinique selon les années.
 
 Les données sont exprimées en pollens/m3. Pour se faire une idée du poids que peuvent représenter les valeurs, voir ce [tableau de la confédération suisse](https://www.meteoswiss.admin.ch/dam/jcr:f3d0942c-b3ab-4de6-882e-5df909faed9c/threshold-values-for-pollen-load-classes-of-allergenic-pollen-types.pdf) concernant les valeurs seuils pour les classes de charge pollinique des types de pollens allergisants. 
 
-## Accès aux données
-- Les données sont disponibles sur la plateforme d'open data du Luxembourg, à l'adresse suivante : https://data.public.lu/en/datasets/pollen/ (dernière consultation le 19.12.2023). Les données sont disponibles au format CSV ou JSON. 
+Il est possible de sélectionner les pollens désirés au moyen des checkboxes en dessous du graphique. 
+### Accès aux données
+- Les données ont été récupérées sur la plateforme d'open data du Luxembourg, à l'adresse suivante : https://data.public.lu/en/datasets/pollen/ (dernière consultation le 19.12.2023). Les données sont disponibles au format CSV ou JSON. 
 
 ## Aides 
 ### Tutoriel Youtube
@@ -18,10 +19,7 @@ Les données sont exprimées en pollens/m3. Pour se faire une idée du poids que
 - Ajout des checkboxes : https://stackoverflow.com/questions/77336948/how-to-hide-show-specific-lines-with-a-checkbox-on-a-line-chart 
 
 ## Améliorations possibles
-Voir la section _issues_ du Github
-Au vu de du nombre important de variables, la visualisation souffre de problèmes de lisibilité. Quelques améliorations sont envisageables : 
-- Ajout d'une grille sur le graphique pour faciliter la lecture
-- Ajout de la position de la souris sur l'axe pour connaitre la valeur exacte à une date donnée
+Voir la section [_issues_](https://github.com/jerchaumont/Pollen-visualization/issues) du Github
 
 ## Carnet de bord
 ### 2022.05.19
