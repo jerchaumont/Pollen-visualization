@@ -11,7 +11,7 @@ Il est possible de sélectionner les pollens désirés au moyen des checkboxes e
 ### Accès aux données
 Les données ont été récupérées sur la plateforme d'open data du Luxembourg, à l'adresse suivante : https://data.public.lu/en/datasets/pollen/ (dernière consultation le 19.12.2023). Les données sont disponibles au format CSV ou JSON. 
 ## Visualiser le projet
-Pour accéder à la réalisation, cliquez [ici](https://jerchaumont.github.io/Pollen-visualization/).
+Pour accéder à la visualisation, cliquez [ici](https://jerchaumont.github.io/Pollen-visualization/).
 
 Il est également possible de télécharger le dossier et de lancer le fichier `index.html` dans un serveur (par exemple avec l'extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) sur Visual Studio Code).
 ## Outils utilisés
