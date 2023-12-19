@@ -8,6 +8,8 @@ Visualisation des données de concentration pollinique au Luxembourg sur 26 ans,
 Les données sont exprimées en pollens/m3. Pour se faire une idée du poids que peuvent représenter les valeurs, voir ce [tableau de la confédération suisse](https://www.meteoswiss.admin.ch/dam/jcr:f3d0942c-b3ab-4de6-882e-5df909faed9c/threshold-values-for-pollen-load-classes-of-allergenic-pollen-types.pdf) concernant les valeurs seuils pour les classes de charge pollinique des types de pollens allergisants. 
 
 Il est possible de sélectionner les pollens désirés au moyen des checkboxes en dessous du graphique. 
+
+![Aperçu de la visualisation](screenshot_viz.png)
 ### Accès aux données
 Les données ont été récupérées sur la plateforme d'open data du Luxembourg, à l'adresse suivante : https://data.public.lu/en/datasets/pollen/ (dernière consultation le 19.12.2023). Les données sont disponibles au format CSV ou JSON. 
 ## Visualiser le projet
