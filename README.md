@@ -9,7 +9,7 @@ Les données sont exprimées en pollens/m3. Pour se faire une idée du poids que
 
 Il est possible de sélectionner les pollens désirés au moyen des checkboxes en dessous du graphique. 
 
-![Aperçu de la visualisation](screenshot_viz.png)
+![Aperçu de la visualisation](screenshot_viz.png "Aperçu de la visualisation")
 ### Accès aux données
 Les données ont été récupérées sur la plateforme d'open data du Luxembourg, à l'adresse suivante : https://data.public.lu/en/datasets/pollen/ (dernière consultation le 19.12.2023). Les données sont disponibles au format CSV ou JSON. 
 ## Visualiser le projet
