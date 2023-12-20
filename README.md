@@ -1,8 +1,5 @@
 # Pollen-visualization
 ## Description
-### Contexte de développement 
-Ce projet a été développé dans le cadre du cours de _Visualisation de données_ dispensé par Isaac Pante (SLI, Lettres, UNIL) au semestre de printemps 2022.
-### Visualisation
 Visualisation des données de concentration pollinique au Luxembourg sur 26 ans, avec une trentaine de pollens répertoriés, ceci afin de pouvoir observer de potentielles variations de concentration pollinique selon les années.
 
 Les données sont exprimées en pollens/m3. Pour se faire une idée du poids que peuvent représenter les valeurs, voir ce [tableau de la confédération suisse](https://www.meteoswiss.admin.ch/dam/jcr:f3d0942c-b3ab-4de6-882e-5df909faed9c/threshold-values-for-pollen-load-classes-of-allergenic-pollen-types.pdf) concernant les valeurs seuils pour les classes de charge pollinique des types de pollens allergisants. 
@@ -27,7 +24,7 @@ Utilisation de la librairie javascript [D3.js](https://d3js.org), qui permet des
 - Ajout des checkboxes : https://stackoverflow.com/questions/77336948/how-to-hide-show-specific-lines-with-a-checkbox-on-a-line-chart 
 
 ## Améliorations possibles
-Voir la section [_issues_](https://github.com/jerchaumont/Pollen-visualization/issues) du Github
+Voir la section [_issues_](https://github.com/jerchaumont/Pollen-visualization/issues) du Github.
 
 ## Carnet de bord
 ### 2022.05.19
@@ -49,3 +46,5 @@ Voir la section [_issues_](https://github.com/jerchaumont/Pollen-visualization/i
 - Ajout des checkboxes.
 - Finalisation du projet (Readme, Github Pages).  
 
+## Contexte de développement 
+Ce projet a été développé dans le cadre du cours de _Visualisation de données_ dispensé par Isaac Pante (SLI, Lettres, UNIL) au semestre de printemps 2022.
