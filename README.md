@@ -36,7 +36,7 @@ Voir la section [_issues_](https://github.com/jerchaumont/Pollen-visualization/i
 - Comprendre comment faire une échelle et une _line chart_.
 
 ### 2022.05.27
-- test des données sur un graphique axial.
+- Test des données sur un graphique axial.
 
 ### 2022.06
 - Problèmes avec le _parsing_ des données, constamment la même erreur : `Error: Problem parsing d="MNaN,NaNLNaN,NaNLNaN,NaNLNaN,NaN"`. Impossible d'afficher toutes les variables polliniques en même temps. 
